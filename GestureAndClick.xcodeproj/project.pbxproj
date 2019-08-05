@@ -13,6 +13,10 @@
 		4E707A6322F8EC04005954C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E707A6222F8EC04005954C5 /* Assets.xcassets */; };
 		4E707A6622F8EC04005954C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E707A6422F8EC04005954C5 /* LaunchScreen.storyboard */; };
 		4E707A6922F8EC04005954C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A6822F8EC04005954C5 /* main.m */; };
+		4E707A7122F8ED6F005954C5 /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A7022F8ED6F005954C5 /* BlueView.m */; };
+		4E707A7422F8EE5B005954C5 /* GreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A7322F8EE5B005954C5 /* GreenView.m */; };
+		4E707A7722F8EE83005954C5 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A7622F8EE83005954C5 /* RedView.m */; };
+		4E707A7D22F8F104005954C5 /* DefaultControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A7C22F8F104005954C5 /* DefaultControllerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		4E707A6522F8EC04005954C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E707A6722F8EC04005954C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E707A6822F8EC04005954C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E707A6F22F8ED6F005954C5 /* BlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
+		4E707A7022F8ED6F005954C5 /* BlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
+		4E707A7222F8EE5B005954C5 /* GreenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenView.h; sourceTree = "<group>"; };
+		4E707A7322F8EE5B005954C5 /* GreenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenView.m; sourceTree = "<group>"; };
+		4E707A7522F8EE83005954C5 /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
+		4E707A7622F8EE83005954C5 /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
+		4E707A7B22F8F104005954C5 /* DefaultControllerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultControllerView.h; sourceTree = "<group>"; };
+		4E707A7C22F8F104005954C5 /* DefaultControllerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultControllerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,14 @@
 				4E707A6422F8EC04005954C5 /* LaunchScreen.storyboard */,
 				4E707A6722F8EC04005954C5 /* Info.plist */,
 				4E707A6822F8EC04005954C5 /* main.m */,
+				4E707A6F22F8ED6F005954C5 /* BlueView.h */,
+				4E707A7022F8ED6F005954C5 /* BlueView.m */,
+				4E707A7222F8EE5B005954C5 /* GreenView.h */,
+				4E707A7322F8EE5B005954C5 /* GreenView.m */,
+				4E707A7522F8EE83005954C5 /* RedView.h */,
+				4E707A7622F8EE83005954C5 /* RedView.m */,
+				4E707A7B22F8F104005954C5 /* DefaultControllerView.h */,
+				4E707A7C22F8F104005954C5 /* DefaultControllerView.m */,
 			);
 			path = GestureAndClick;
 			sourceTree = "<group>";
@@ -141,7 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E707A7122F8ED6F005954C5 /* BlueView.m in Sources */,
 				4E707A5E22F8EC02005954C5 /* ViewController.m in Sources */,
+				4E707A7722F8EE83005954C5 /* RedView.m in Sources */,
+				4E707A7422F8EE5B005954C5 /* GreenView.m in Sources */,
+				4E707A7D22F8F104005954C5 /* DefaultControllerView.m in Sources */,
 				4E707A6922F8EC04005954C5 /* main.m in Sources */,
 				4E707A5B22F8EC02005954C5 /* AppDelegate.m in Sources */,
 			);
