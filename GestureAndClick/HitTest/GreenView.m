@@ -28,8 +28,15 @@
     return self;
 }
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"View: GreenView");
     UIView * resultView = [super hitTest:point withEvent:event];
-    NSLog(@"Green hit test result = %@", resultView);
+    NSLog(@"GreenView hit test result = %@", resultView);
     return resultView;
 }
+
+
+- (IBAction)tapClick:(id)sender {
+    NSLog(@"GreenView tap click");
+}
+
 @end

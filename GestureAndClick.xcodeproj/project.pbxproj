@@ -17,6 +17,12 @@
 		4E707A7422F8EE5B005954C5 /* GreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A7322F8EE5B005954C5 /* GreenView.m */; };
 		4E707A7722F8EE83005954C5 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A7622F8EE83005954C5 /* RedView.m */; };
 		4E707A7D22F8F104005954C5 /* DefaultControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A7C22F8F104005954C5 /* DefaultControllerView.m */; };
+		4E707A8522F8FBB6005954C5 /* TouchView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A8422F8FBB6005954C5 /* TouchView1.m */; };
+		4E707A8822F8FCFD005954C5 /* TouchBeganViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A8722F8FCFD005954C5 /* TouchBeganViewController.m */; };
+		4E707A8B22F8FDA2005954C5 /* TouchView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A8A22F8FDA2005954C5 /* TouchView2.m */; };
+		4E707A8E22F8FE03005954C5 /* TouchView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A8D22F8FE03005954C5 /* TouchView3.m */; };
+		4E707A9122F8FE0F005954C5 /* TouchView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A9022F8FE0F005954C5 /* TouchView4.m */; };
+		4E707A9422F90CD9005954C5 /* ParamSharedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E707A9322F90CD9005954C5 /* ParamSharedManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,18 @@
 		4E707A7622F8EE83005954C5 /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
 		4E707A7B22F8F104005954C5 /* DefaultControllerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultControllerView.h; sourceTree = "<group>"; };
 		4E707A7C22F8F104005954C5 /* DefaultControllerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultControllerView.m; sourceTree = "<group>"; };
+		4E707A8322F8FBB6005954C5 /* TouchView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchView1.h; sourceTree = "<group>"; };
+		4E707A8422F8FBB6005954C5 /* TouchView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchView1.m; sourceTree = "<group>"; };
+		4E707A8622F8FCFD005954C5 /* TouchBeganViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBeganViewController.h; sourceTree = "<group>"; };
+		4E707A8722F8FCFD005954C5 /* TouchBeganViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchBeganViewController.m; sourceTree = "<group>"; };
+		4E707A8922F8FDA2005954C5 /* TouchView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchView2.h; sourceTree = "<group>"; };
+		4E707A8A22F8FDA2005954C5 /* TouchView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchView2.m; sourceTree = "<group>"; };
+		4E707A8C22F8FE03005954C5 /* TouchView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchView3.h; sourceTree = "<group>"; };
+		4E707A8D22F8FE03005954C5 /* TouchView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchView3.m; sourceTree = "<group>"; };
+		4E707A8F22F8FE0F005954C5 /* TouchView4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchView4.h; sourceTree = "<group>"; };
+		4E707A9022F8FE0F005954C5 /* TouchView4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchView4.m; sourceTree = "<group>"; };
+		4E707A9222F90CD9005954C5 /* ParamSharedManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParamSharedManager.h; sourceTree = "<group>"; };
+		4E707A9322F90CD9005954C5 /* ParamSharedManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParamSharedManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +97,17 @@
 				4E707A6422F8EC04005954C5 /* LaunchScreen.storyboard */,
 				4E707A6722F8EC04005954C5 /* Info.plist */,
 				4E707A6822F8EC04005954C5 /* main.m */,
+				4E707A8222F8FAD5005954C5 /* TouchBegan */,
+				4E707A8122F8F95D005954C5 /* HitTest */,
+				4E707A9222F90CD9005954C5 /* ParamSharedManager.h */,
+				4E707A9322F90CD9005954C5 /* ParamSharedManager.m */,
+			);
+			path = GestureAndClick;
+			sourceTree = "<group>";
+		};
+		4E707A8122F8F95D005954C5 /* HitTest */ = {
+			isa = PBXGroup;
+			children = (
 				4E707A6F22F8ED6F005954C5 /* BlueView.h */,
 				4E707A7022F8ED6F005954C5 /* BlueView.m */,
 				4E707A7222F8EE5B005954C5 /* GreenView.h */,
@@ -88,7 +117,24 @@
 				4E707A7B22F8F104005954C5 /* DefaultControllerView.h */,
 				4E707A7C22F8F104005954C5 /* DefaultControllerView.m */,
 			);
-			path = GestureAndClick;
+			path = HitTest;
+			sourceTree = "<group>";
+		};
+		4E707A8222F8FAD5005954C5 /* TouchBegan */ = {
+			isa = PBXGroup;
+			children = (
+				4E707A8622F8FCFD005954C5 /* TouchBeganViewController.h */,
+				4E707A8722F8FCFD005954C5 /* TouchBeganViewController.m */,
+				4E707A8322F8FBB6005954C5 /* TouchView1.h */,
+				4E707A8422F8FBB6005954C5 /* TouchView1.m */,
+				4E707A8922F8FDA2005954C5 /* TouchView2.h */,
+				4E707A8A22F8FDA2005954C5 /* TouchView2.m */,
+				4E707A8C22F8FE03005954C5 /* TouchView3.h */,
+				4E707A8D22F8FE03005954C5 /* TouchView3.m */,
+				4E707A8F22F8FE0F005954C5 /* TouchView4.h */,
+				4E707A9022F8FE0F005954C5 /* TouchView4.m */,
+			);
+			path = TouchBegan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,11 +208,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E707A7122F8ED6F005954C5 /* BlueView.m in Sources */,
+				4E707A9122F8FE0F005954C5 /* TouchView4.m in Sources */,
 				4E707A5E22F8EC02005954C5 /* ViewController.m in Sources */,
 				4E707A7722F8EE83005954C5 /* RedView.m in Sources */,
+				4E707A8B22F8FDA2005954C5 /* TouchView2.m in Sources */,
+				4E707A8822F8FCFD005954C5 /* TouchBeganViewController.m in Sources */,
 				4E707A7422F8EE5B005954C5 /* GreenView.m in Sources */,
+				4E707A8E22F8FE03005954C5 /* TouchView3.m in Sources */,
+				4E707A9422F90CD9005954C5 /* ParamSharedManager.m in Sources */,
 				4E707A7D22F8F104005954C5 /* DefaultControllerView.m in Sources */,
 				4E707A6922F8EC04005954C5 /* main.m in Sources */,
+				4E707A8522F8FBB6005954C5 /* TouchView1.m in Sources */,
 				4E707A5B22F8EC02005954C5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

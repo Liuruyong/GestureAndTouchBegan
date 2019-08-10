@@ -1,20 +1,20 @@
 //
-//  BlueView.m
+//  RedView.m
 //  GestureAndClick
 //
 //  Created by 刘儒勇 on 2019/8/6.
 //  Copyright © 2019 刘儒勇. All rights reserved.
 //
 
-#import "BlueView.h"
+#import "RedView.h"
 
-@implementation BlueView
+@implementation RedView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor blueColor];
+        self.backgroundColor = [UIColor redColor];
     }
     return self;
 }
@@ -23,14 +23,15 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        self.backgroundColor = [UIColor blueColor];
+        self.backgroundColor = [UIColor redColor];
     }
     return self;
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"Curret View: RedView");
     UIView * resultView = [super hitTest:point withEvent:event];
-    NSLog(@"BlueView hit test result = %@", resultView);
+    NSLog(@"RedView hit test result = %@", resultView);
     return resultView;
 }
 

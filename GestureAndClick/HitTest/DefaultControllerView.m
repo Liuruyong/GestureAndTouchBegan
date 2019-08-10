@@ -19,8 +19,9 @@
 */
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"\n Current View: DefaultControllerView");
     UIView * resultView = [super hitTest:point withEvent:event];
-    NSLog(@"DefaultController view  hit test result = %@", resultView);
+    NSLog(@"\nDefaultController view  hit test result = %@", resultView);
     return resultView;
 }
 

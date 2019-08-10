@@ -48,13 +48,32 @@
                                             <segue destination="yli-7I-KN3" kind="show" id="dmp-SG-YNj"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="XGp-Mt-lkY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="sdn-lt-TYr" detailTextLabel="gwg-uC-2i7" rowHeight="50" style="IBUITableViewCellStyleSubtitle" id="XGp-Mt-lkY">
                                         <rect key="frame" x="0.0" y="50" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XGp-Mt-lkY" id="97j-8g-FqK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="TouchBegan &amp; Gesture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sdn-lt-TYr">
+                                                    <rect key="frame" x="20" y="8" width="176.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="手势和touchBegan同时存在时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gwg-uC-2i7">
+                                                    <rect key="frame" x="20" y="28.5" width="166" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="693-IO-GJZ" kind="show" id="7rI-0N-blF"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="pT5-po-elc">
                                         <rect key="frame" x="0.0" y="100" width="414" height="50"/>
@@ -101,6 +120,10 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="clj-yr-5qY" appends="YES" id="FoA-tX-l9a"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,8 +134,72 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JuP-rN-IP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="clj-yr-5qY">
+                    <connections>
+                        <action selector="tapClick:" destination="Kwo-Ls-RSD" id="STR-CT-fK6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1308.6956521739132" y="83.705357142857139"/>
+        </scene>
+        <!--TouchBegan和手势-->
+        <scene sceneID="EOB-1U-tmh">
+            <objects>
+                <viewController title="TouchBegan和手势" id="693-IO-GJZ" customClass="TouchBeganViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V14-0b-ack" customClass="DefaultControllerView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SiY-Al-fix" customClass="TouchView1">
+                                <rect key="frame" x="33" y="157" width="348" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HEC-1L-ZNq" customClass="TouchView2">
+                                        <rect key="frame" x="54" y="77" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Xbx-KM-O08" appends="YES" id="3oI-hD-YQK"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-Cn-BEl" customClass="TouchView3">
+                                        <rect key="frame" x="54" y="297" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eaa-t7-vVa" appends="YES" id="PSf-1f-bby"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-AO-qhZ" customClass="TouchView4">
+                                <rect key="frame" x="33" y="718" width="361" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zRg-Kr-lAV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xe-Cs-MMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eaa-t7-vVa" userLabel="TouchView1 tap">
+                    <connections>
+                        <action selector="tapClick:" destination="SiY-Al-fix" id="Vrr-Fh-Q0g"/>
+                        <outlet property="delegate" destination="SiY-Al-fix" id="TgK-jr-eKO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Xbx-KM-O08" userLabel="TocuhView2 tap">
+                    <connections>
+                        <action selector="tapClick:" destination="HEC-1L-ZNq" id="SSc-DL-hK9"/>
+                        <outlet property="delegate" destination="HEC-1L-ZNq" id="hmO-WZ-clO"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1350.7246376811595" y="773.4375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4MG-m8-7Mb">
